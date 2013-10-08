@@ -1,0 +1,120 @@
+/*mono colours: #FFFFFF #4A4B4E*/
+
+body { 
+    font: 32px 'LeagueGothicRegular', Arial,Helvetica,sans-serif;
+    text-align:center;
+    height: 100%;
+    
+    background:#560025 url(texture.png) ;
+    color:#FF7B00;
+    
+    /*background:white;
+    color:black;
+    background: url(shapes.png);*/
+}
+
+.smallprint {
+	font-size: 24px;	
+}
+
+a {
+	color:#FF7B00;
+	}
+
+p {
+	margin-top: 18px;
+	margin-bottom: 20px;
+	}
+
+h1 {
+   margin-top:25px;
+   margin-bottom:25px;
+   margin-left: auto;
+   margin-right: auto;
+   /*we have to reimport the font to get it looking right at this size */
+   font: 85px/85px 'chunkfiveroman', Arial, sans-serif;
+
+   /*was 158/158 league gothic*/
+
+}
+
+h1.spaceoct {
+	margin-top: 25px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font: 158px/158px 'LeagueGothicRegular', Arial, sans-serif;
+}
+
+.dense-text {
+	text-align: justify;
+	padding-left: 32px;
+	padding-right: 32px;
+	}
+
+/*todo: rename this to site header, as that's what it is for now*/
+.medium {
+	font-size: 38px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	}
+
+/*todo: ask someone if this really makes it look better. */
+.medium a {
+	text-decoration: none;
+	}
+
+.presents {
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	letter-spacing: 3px;
+	}
+
+.section {
+	border-bottom: 3px solid;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	padding: 0px;
+	}
+
+.section:FIRST-CHILD {
+	border-top: 3px solid;
+	}
+
+.collection {
+	display: block;
+	margin-bottom: 12px;
+	}
+
+.collection div {
+	text-align: center;
+	display: inline-block;
+	width: 30.0%;
+	}
+
+.collection .left {
+	text-align: left;
+	}
+
+.collection .right {
+	text-align: right;
+	}
+
+img {
+	margin: 12px;
+	margin-bottom: 18px;
+	}
+
+/*Hacks for printing the poster.*/
+@media print {
+   .dense-text {margin-bottom: 10px;}
+   .smallprint {margin-top: 10px};
+   .screenonly {display: none;}
+	}
+
+@media screen {
+	.printonly {display: none;};
+}
