@@ -47,6 +47,7 @@ h1.spaceoct {
 }
 
 .dense-text {
+	font-size: 23px;
 	text-align: justify;
 	padding-left: 32px;
 	padding-right: 32px;
@@ -111,10 +112,10 @@ img {
 /*Hacks for printing the poster.*/
 @media print {
    .dense-text {margin-bottom: 10px;}
-   .smallprint {margin-top: 10px};
+   .smallprint {margin-top: 10px;}
    .screenonly {display: none;}
 	}
 
 @media screen {
-	.printonly {display: none;};
+	.printonly {display: none;}
 }
