@@ -33,9 +33,10 @@ h1 {
    margin-right: auto;
    /*we have to reimport the font to get it looking right at this size */
    font: 85px/85px 'chunkfiveroman', Arial, sans-serif;
+}
 
-   /*was 158/158 league gothic*/
-
+h2 {
+	font: 50px/50px 'chunkfiveroman', Arial, sans-serif;
 }
 
 h1.spaceoct {
