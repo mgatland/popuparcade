@@ -110,6 +110,10 @@ img {
 	margin-bottom: 18px;
 	}
 
+.smallimg {
+	max-width: 250px;
+}
+
 /*Hacks for printing the poster.*/
 @media print {
    .dense-text {margin-bottom: 10px;}
