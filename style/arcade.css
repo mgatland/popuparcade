@@ -1,0 +1,113 @@
+body { 
+    font: 34px 'Pompiere', Arial,Helvetica,sans-serif;
+    text-align:center;
+    height: 100%;
+    color: #FFE5A1;
+    background: rgb(131, 64, 42) url(pattern.png);
+}
+
+.smallprint {
+	font-size: 24px;	
+}
+
+a {
+	color: #FFE5A1;
+	}
+
+p {
+	margin-top: 20px;
+	margin-bottom: 22px;
+	}
+
+h1 {
+   font-family: 'Pompiere', cursive, sans-serif; 
+   font-size: 88px; font-weight: normal; 
+   line-height: 110%; 
+   margin-top:35px;
+   margin-bottom:35px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+h2 {
+	font: 60px 'Pompiere', cursive, sans-serif;
+}
+
+.pressrelease {
+	text-align: left;
+	font-family: 'Times New Roman';
+	font-size: 20px;
+}
+
+ul {
+	text-align: left;
+	font-size: 26px;
+}
+
+.dense-text {
+	font-size: 23px;
+	text-align: justify;
+	padding-left: 32px;
+	padding-right: 32px;
+	}
+
+.logo {
+	font-size: 38px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	}
+
+.logo a {
+	text-decoration: none;
+	}
+
+.presents {
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	letter-spacing: 3px;
+	}
+
+.section {
+	border-bottom: 3px solid;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 17px;
+	margin-bottom: 17px;
+	padding: 0px;
+	}
+
+.section:FIRST-CHILD {
+	border-top: 3px solid;
+	}
+
+/*a collection holds three horizontally aligned items*/
+.collection {
+	display: block;
+	margin-bottom: 12px;
+	}
+
+.collection div {
+	text-align: center;
+	display: inline-block;
+	width: 30.0%;
+	}
+
+.collection .left {
+	text-align: left;
+	}
+
+.collection .right {
+	text-align: right;
+	}
+
+img {
+	margin: 12px;
+	margin-bottom: 18px;
+	border: 1px solid #BA885C;
+	}
+
+.smallimg {
+	width: 250px;
+	height: 187px;
+}

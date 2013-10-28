@@ -1,16 +1,11 @@
-/*mono colours: #FFFFFF #4A4B4E*/
-
 body { 
     font: 34px 'LeagueGothicRegular', Arial,Helvetica,sans-serif;
     text-align:center;
     height: 100%;
     
-    background:#560025 url(texture.png) ;
-    color:#FF7B00;
-    
-    /*background:white;
-    color:black;
-    background: url(shapes.png);*/
+    background:#000;
+    color:#aaa;
+   
 }
 
 .smallprint {
@@ -18,7 +13,7 @@ body {
 }
 
 a {
-	color:#FF7B00;
+	color:#aaa;
 	}
 
 p {
@@ -27,24 +22,16 @@ p {
 	}
 
 h1 {
+   color:#FFFCA8;
    margin-top:25px;
-   margin-bottom:25px;
+   margin-bottom:30px;
    margin-left: auto;
    margin-right: auto;
-   /*we have to reimport the font to get it looking right at this size */
-   font: 85px/85px 'chunkfiveroman', Arial, sans-serif;
-}
-
-h2 {
-	font: 50px/50px 'chunkfiveroman', Arial, sans-serif;
+   font: 58px/58px 'LeagueGothicRegular', Arial, sans-serif;
 }
 
 h1.spaceoct {
-	margin-top: 25px;
-	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	font: 158px/158px 'LeagueGothicRegular', Arial, sans-serif;
+	font: 158px/158px 'LeagueGothicRegular', Arial, sans-serif;	
 }
 
 .dense-text {
