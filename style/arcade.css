@@ -6,8 +6,69 @@ body {
     background: rgb(131, 64, 42) url(pattern.png);
 }
 
+/***************TODO: move into separate style sheet to not waste everyone's data *******/
+body.poster {
+	background: rgb(131, 64, 42) url(pattern3.png);
+	font-size: 12px;
+}
+
+.poster .smallprint {
+	font-size:8px;
+}
+
+.poster p {
+	margin-top: 10px;
+	margin-bottom:11px;
+}
+
+.poster div {
+}
+
+.poster h1 {
+	font-size: 33px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.poster .allpages {
+	width: 1200px;
+}
+
+.poster .page {
+	float: left;
+}
+
+.poster .section {
+	max-width: 260px;
+	width: 260px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-bottom-width: 1px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+
+.poster .collection {
+	margin-bottom: 6px;
+}
+
+.poster .smallimg {
+	margin: 6px;
+	margin-bottom: 9px;
+	border-width: 3px;
+	width: 100px;
+	height: 75px;
+}
+
+.poster .section:FIRST-CHILD {
+	border-top-width: 1px;
+	}
+
+
+/**********************/
+
 .smallprint {
-	font-size: 24px;	
+	font-size: 24px;
 }
 
 a {
