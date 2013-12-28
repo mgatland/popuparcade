@@ -169,6 +169,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox] + label:before {
+	color: #fb9e25;
 	content: "\2063  ";
 	text-shadow: 1px 1px 1px #cc9f52;
 	text-align: center;
@@ -186,6 +187,7 @@ input[type=checkbox] + label:before {
 }
 
 input[type=checkbox]:checked + label:before {
+	color: white;
 	content: "\2713  ";
 	width: 20px;
 	text-shadow: 1px 1px 1px #cc9f52;
