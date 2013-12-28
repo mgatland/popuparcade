@@ -6,69 +6,29 @@ body {
     background: rgb(131, 64, 42) url(pattern.png);
 }
 
-/***************TODO: move into separate style sheet to not waste everyone's data *******/
-body.poster {
-	background: rgb(131, 64, 42) url(pattern3.png);
-	font-size: 12px;
+.navlist {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    text-decoration: none;
 }
 
-.poster .smallprint {
-	font-size:8px;
+.threelist {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    text-decoration: none;
 }
-
-.poster p {
-	margin-top: 10px;
-	margin-bottom:11px;
-}
-
-.poster div {
-}
-
-.poster h1 {
-	font-size: 33px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-.poster .allpages {
-	width: 1200px;
-}
-
-.poster .page {
-	float: left;
-}
-
-.poster .section {
-	max-width: 260px;
-	width: 260px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	border-bottom-width: 1px;
-	margin-left: 20px;
-	margin-right: 20px;
-	}
-
-.poster .collection {
-	margin-bottom: 6px;
-}
-
-.poster .smallimg {
-	margin: 6px;
-	margin-bottom: 9px;
-	border-width: 3px;
-	width: 100px;
-	height: 75px;
-}
-
-.poster .section:FIRST-CHILD {
-	border-top-width: 1px;
-	}
-
-
-/**********************/
 
 .smallprint {
 	font-size: 24px;
+}
+
+.portrait {
+	width: 128px;
+	height: 128px;
+	border: 3px solid #FFE5A1;
+	border-radius: 64px;
 }
 
 a {
@@ -94,6 +54,10 @@ h2 {
 	font: 60px 'Pompiere', cursive, sans-serif;
 }
 
+h3 {
+	font: 50px 'Pompiere', cursive, sans-serif;
+}
+
 .pressrelease {
 	text-align: left;
 	font-family: 'Times New Roman';
@@ -114,8 +78,8 @@ ul {
 
 .logo {
 	font-size: 38px;
-	margin-top: 5px;
-	margin-bottom: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	}
 
 .logo a {
@@ -123,23 +87,31 @@ ul {
 	}
 
 .presents {
-	font-size: 14px;
-	margin-top: 0px;
+	font-size: 30px;
+	margin-top: 10px;
 	margin-bottom: 6px;
-	letter-spacing: 3px;
+	}
+
+.section:first-of-type {
+	margin-top: 17px;
 	}
 
 .section {
-	border-bottom: 3px solid;
-	max-width: 800px;
 	margin: auto;
-	margin-top: 17px;
-	margin-bottom: 17px;
 	padding: 0px;
+	max-width: 800px;
+
+	margin-top: 0px;
+	border-top: 3px solid;
+	padding-top: 0px;
+
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 	}
 
-.section:FIRST-CHILD {
-	border-top: 3px solid;
+.section:last-of-type {
+	border-bottom: 3px solid;
+	margin-bottom: 17px;
 	}
 
 /*a collection holds three horizontally aligned items*/
@@ -162,13 +134,81 @@ ul {
 	text-align: right;
 	}
 
-img {
+.framed {
 	margin: 12px;
 	margin-bottom: 18px;
 	border: 1px solid #BA885C;
+	max-width: 500px;
 	}
 
 .smallimg {
 	width: 250px;
 	height: 187px;
+	/*inherited from .framed*/
+	margin: 12px;
+	margin-bottom: 18px;
+	border: 1px solid #BA885C;
+}
+
+form {
+	border: 2px solid #BA885C;
+	background: rgb(131, 64, 42) url(pattern2.png);
+	max-width: 400px;
+	margin: auto;
+	padding: 20px;
+	color: white;
+}
+
+input {
+	font-size: 22px;
+	margin: 12px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label:before {
+	content: "\2063  ";
+	text-shadow: 1px 1px 1px #cc9f52;
+	text-align: center;
+	margin-right: 15px;
+	width: 20px;
+
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background-color:#fb9e25;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	font-size:22px;
+	padding:3px 12px;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "\2713  ";
+	width: 20px;
+	text-shadow: 1px 1px 1px #cc9f52;
+	text-align: center;
+}
+
+input[type=submit] {
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background-color:#fb9e25;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	font-size:22px;
+	padding:3px 12px;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+
+label {
+	font-size: 26px
+}
+
+.photosandcaptions .framed {
+	margin-bottom: 0px;
+	margin-top: 64px;
 }
