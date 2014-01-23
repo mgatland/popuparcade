@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/style/arcade.css" type="text/css" />
+<link rel="stylesheet" href="/businesscard/font-awesome-4.0.3/css/font-awesome.css" type="text/css" />
+<style>
+.businesscard {
+  width: 800px;
+  height: 491px;
+  border: solid 1px white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.section, .section:first-of-type {
+  margin-top: 100px;
+  width: 630px;
+}
+.contactlist {
+  text-align: left;
+  width:572px;
+  margin: auto;"
+}
+h1 {
+  font-size: 100px;
+}
+p {
+  margin: 16px;
+  font-size: 60px; 
+}
+.green {
+  background: #024D02;
+}
+.blue {
+  background: #284772;
+}
+</style>
+<script>
+  window.addEventListener('load', function () {
+
+    document.getElementById("greener").addEventListener('click', function () {
+      setStyle('green');
+    });
+    document.getElementById("bluer").addEventListener('click', function () {
+      setStyle('blue');
+    });
+    document.getElementById("defaulter").addEventListener('click', function () {
+      setStyle('');
+    });
+
+  }, false);
+
+  var setStyle = function (style) {
+      document.getElementById('front').className='businesscard ' + style; 
+      document.getElementById('back').className='businesscard ' + style; 
+  }
+</script>
+<title>The Pop-Up Games Arcade</title>
+</head>
+<body>
+  <p><a href="#" id="greener">green?</a> <a href="#" id="bluer">blue?</a> <a href="#" id="defaulter">default?</a></p>
+  <div class="businesscard" id="front">
+    <div class="section">
+    	<h1>THE POP-UP<br>GAMES ARCADE</h1>
+    </div>
+  </div>
+  <div class="businesscard" id="back">
+    <div class="section">
+      <div class="contactlist">
+        <p><i class="fa fa-twitter fa-fw"></i> @popup_arcade</p>
+        <p><i class="fa fa-globe fa-fw"></i> popuparcade.co.nz</p>
+        <p><i class="fa fa-envelope-o fa-fw"></i> popuparcade@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+ 
