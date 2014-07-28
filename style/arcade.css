@@ -14,11 +14,14 @@ body {
 
 .back1, .back2, .back3, .back4, .back5 {
 	overflow: auto;
-	max-width: 800px;
+	max-width: 720px;
 	margin-left: auto;
 	margin-right: auto;
 	border-left: 3px solid white;
 	border-right: 3px solid white;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 25px;
 }
 
 .back1 {
@@ -46,6 +49,11 @@ body {
 
 .back4 h2, .back5 h2, .back4 h3, .back5 h3 {
 	color: rgb(190, 192, 235);
+}
+
+/* as do links */
+.back2 a {
+	color: rgb(210, 67, 68);
 }
 
 .navlist {
@@ -91,8 +99,8 @@ p {
 }
 
 .subheading {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 h1 {
@@ -155,26 +163,6 @@ li {
 	margin-bottom: 6px;
 	}
 
-.section:first-of-type {
-	margin-top: 17px;
-	}
-
-.section {
-	margin: auto;
-	padding: 0px;
-	max-width: 750px;
-
-	margin-top: 0px;
-	padding-top: 0px;
-
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-	}
-
-.section:last-of-type {
-	margin-bottom: 17px;
-	}
-
 /*a collection holds three horizontally aligned items*/
 .collection {
 	display: block;
@@ -201,6 +189,15 @@ li {
 	border: 4px solid white;
 	max-width: 500px;
 	}
+
+/* place under a .framed img */
+.caption {
+	font-weight: bold;
+	width:500px;
+	margin-top: -12px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .smallimg {
 	width: 250px;
