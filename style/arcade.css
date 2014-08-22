@@ -56,6 +56,11 @@ body {
 	color: rgb(210, 67, 68);
 }
 
+/* and lists */
+.back2 ul {
+	color: #F5974E;
+}
+
 .navlist {
     display: inline-block;
     width: 22%;
