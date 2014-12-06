@@ -47,13 +47,16 @@ body {
    background-color: rgb(210,67,68);
 }
 
-/* highlight color changes part-way down the page */
+/* some colors change for some backgrounds */
 
-.back4 h2, .back5 h2, .back4 h3, .back5 h3 {
-	color: rgb(46, 48, 77);
+.back5 h1 {
+	color: rgba(255, 255, 255, 0.8);
 }
 
-/* as do links */
+.back2 h2, .back2 h3 {
+	color: rgb(210, 67, 68);
+}
+
 .back2 a {
 	color: rgb(210, 67, 68);
 }
@@ -112,6 +115,10 @@ p {
 	margin-bottom: 50px;
 }
 
+h2, h3 {
+	color: rgb(46, 48, 77);
+}
+
 h1 {
    font-size: 50px; font-weight: normal; 
    line-height: 110%; 
@@ -119,7 +126,7 @@ h1 {
    margin-bottom: 50px;
    margin-left: auto;
    margin-right: auto;
-   color: rgba(255, 255, 255, 0.7);
+   color: rgba(0, 0, 0, 0.8);
 }
 
 h2 { 
@@ -129,7 +136,6 @@ h2 {
 
    margin-top: 40px;
    margin-bottom: 40px; 
-   color: rgb(210, 67, 68);
 }
 
 h3 {
