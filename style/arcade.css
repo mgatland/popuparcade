@@ -50,7 +50,7 @@ body {
 /* highlight color changes part-way down the page */
 
 .back4 h2, .back5 h2, .back4 h3, .back5 h3 {
-	color: rgb(190, 192, 235);
+	color: rgb(46, 48, 77);
 }
 
 /* as do links */
@@ -86,14 +86,14 @@ body {
 .portrait {
 	width: 128px;
 	height: 128px;
-	border: 3px solid white;
+	border: 3px solid rgba(255, 255, 255, 0.4);
 	border-radius: 64px;
 	margin-bottom: 15px;
 }
 
 a {
 	color: white;
-	text-decoration: none;
+	text-decoration: underline;
 	}
 
 a:hover {
@@ -216,17 +216,32 @@ li {
 }
 
 form {
-	border: 2px solid white;
-	background-color: rgb(162, 207, 165);
-	max-width: 400px;
-	margin: auto;
-	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.mc-field-group {
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
 }
 
 input {
 	font-size: 22px;
 	margin: 12px;
+	background-color: rgb(199, 199, 199);
+	border-radius: 3px;
+	border: none;
+	padding: 8px 10px;
 }
+
+input[type=email], input[type=text] {
+	width: 300px;
+}
+
 
 input[type=checkbox] {
 	display: none;
@@ -256,7 +271,7 @@ input[type=checkbox]:checked + label:before {
 input[type=submit] {
 	color: black;
 	background-color: rgb(245,151,78);
-	border: 2px solid white;
+	border: 2px solid rgba(255,255,255,0.3);
 	display:inline-block;
 	cursor:pointer;
 	font-size:22px;
@@ -264,7 +279,17 @@ input[type=submit] {
 }
 
 label {
-	font-size: 26px
+	width: 10%;
+	display: inline-block;
+	text-align: right;
+}
+
+.input-group label {
+	width: 100%;	
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 .photosandcaptions .framed {
