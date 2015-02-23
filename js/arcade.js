@@ -15,6 +15,7 @@ fullScreenBackground.onclick = function(e) {
 }
 
 function showImage(file) {
+	fullScreenImage.src = ""; //hide previous image
 	fullScreenImage.src = file;
 	fullScreenBackground.classList.add("show");	
 }
