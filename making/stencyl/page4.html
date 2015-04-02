@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/style/arcade.css" type="text/css" />
+<title>The Pop-Up Games Arcade</title>
+</head>
+<body>
+	<div class="back3">
+		<div class="container">
+		    <h2>Getting started with Stencyl</h2>
+		    <img src="stencyl_logo.png">
+<h2>
+ Part 10: Enabling Our Ship to Fire Bullets</h2>
+<p>
+ Step 68: Our next Event will create a Bullet Actor and set it in motion when the player presses a keyboard key. Click the + Add Event button, mouse over Input, and select Keyboard.</p>
+<div class="tableWrapper" style="padding:10px;">
+ <strong>Tip:</strong> To make sure your bullets fire properly, make sure you remembered to set their <strong>Actor Type</strong> in the <strong>Physics</strong> tab to <strong>Normal</strong>. We did this back when we were creating the actor types.</div>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 10 on Stencylpedia_files/image49.png"></p>
+<p>
+ Step 69: On the block that appears, set the control dropdown to action 1, as shown.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 10 on Stencylpedia_files/image30.png"></p>
+<p>
+ Step 70: Now we need to grab two blocks, one that creates our Bullet Actor and another that sends it on its way.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 10 on Stencylpedia_files/image60.png"></p>
+<p>
+ The first is under Scene -&gt; Actors in the Palette. The second is under Actor -&gt; Motion. </p>
+
+ <p>Select the Bullet Actor Type by clicking on the dropdown on the create Actor Type block.</p>
+
+ <p>In the blue push [Actor] block, change the [Self] field to [last created actor] and [gently] to [sharply]. Snap them together into the Event block, as shown.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 10 on Stencylpedia_files/image95.png"></p>
+<p>
+ Step 71: Next, we need to set where the Bullet is created and the direction it should travel in. For the x and y values, set them to x of self and y of self, which is the current position of the Ship on screen. Click on each dropdown (for x and y) to choose the x of self block from the Actor category in the Block Picker. Then switch the [x] to [y] in the second block, as shown.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 10 on Stencylpedia_files/image25.png"></p>
+<p>
+ Step 72: From here, we set the direction and force the Bullet Actor will launch at in the push [Last Created Actor] block. Set xDir to 0 (we only want the Ship to shoot bullets toward the Enemy Ships, which is up, not horizontally) and yDir to -1. Remember, that “up” on a computer screen is in the negative y direction. Lastly, set force to 40.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 10 on Stencylpedia_files/image50.png"></p>
+<p>
+ Test the game again (press the Z key to fire).</p>
+<p>
+ We now need to ensure our Bullet Actors are destroyed when they leave the screen.</p>
+<p>
+		
+
+	    </div>
+	</div>
+
+
+	<div class="back4">
+		<div class="container">
+			<h2>
+ Part 11: Destroying Bullets</h2>
+<p>
+ Step 73: Open up your Bullet Actor Type (go to the Dashboard, click Actor Types, select Bullet) and click the Events button.</p>
+
+
+ <!-- Add an Actor of Type Collision Event (click + Add Event button on the left, then select the Event, as shown).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 11 on Stencylpedia_files/image103.png"></p>
+<p>
+ Step 74: Set the Actor Type to Enemy Ship, then drag over a kill [Self] block from the Palette (under Actor -&gt; Properties).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 11 on Stencylpedia_files/image73.png"></p>
+<p>
+ Now each Bullet Actor will be destroyed when it collides with an Enemy Ship.</p>
+<p>-->
+ Step 75: To ensure our Bullets are destroyed when they leave the screen, we need to add an Actor Event, when a Specific Actor Enters or Leaves the Screen, as shown:</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 11 on Stencylpedia_files/image66.png"></p>
+<p>
+ Step 76: Change the dropdowns on the Event block that appears from enters to exits, and from scene to screen, then drag over a kill [Self] block (Actor -&gt; Properties in the Palette).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 11 on Stencylpedia_files/image45.png"></p>
+<p>
+ Save your game and test it. You won't notice any difference, but the bullets should now disappear when they go off screen instead of floating through space forever.</p>
+<p>
+
+		</div>
+	</div>
+
+
+	<div class="back5">
+		<div class="container">
+
+
+<h2>
+ Part 12: Destroying the Enemy Ships</h2>
+<p>
+ Step 77: Open up the Enemy Ship Actor Type (click Dashboard, then Actor Types, then double-click Enemy Ship). Click its Events tab, add a Collision Event for Member of Group, as shown.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image54.png"></p>
+<p>
+ Step 78: Here is the basic logic we want to create: If an Actor that’s a member of the Bullets Group collides with the Enemy Ship (“Self” in this case), subtract a Health point. If the Enemy Ship has no Health Points left, i.e. less than or equal to 0, kill our Enemy Ship.</p>
+<p>
+ To start, create a new Attribute, select Number for its type, and name it Health Points (click the Attributes button on the Palette, then the Create an Attribute button).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image42.png"></p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image59.png"></p>
+<p>
+ Step 79: Now create a When Creating Event (click + Add Event, then mouse over Basics, then click When Creating). After that, click on Attributes -&gt; Setters in the Palette and drag over the set Health Points to [ ] block, snap it inside the Event, and type 3 into the empty field.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image100.png" style="width: 186px; height: 71px;"></p>
+<p>
+ Step 80: Next, go back to the Collision event (It's called Actor - Group in the list).</p>
+
+ <p>Set the Actor Group to Bullets in the Collision Event and then drag over an increment block (in the Numbers &amp; Text -&gt; Math category). Change increment to decrement by clicking the dropdown on that block, then snap it into the Event block.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image84.png" style="width: 479px; height: 85px;"></p>
+<p>
+ Step 81: Lastly, we need to add an Event that checks the number of Health Points the Enemy Ship has left and destroys it if it has 0. To start, click the + Add Event button, mouse over Basics again, and select When Updating. Next, drag an if block inside the Always block (in Flow -&gt; Conditional in the Palette).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image68.png" style="width: 102px; height: 112px;"></p>
+<p>
+ Step 82: Now we add a green <strong>[ ] &lt; = [ ]</strong> block (under Flow -&gt; Conditional again) to the empty field in the if block and then check whether Health Points is less than or equal to 0 or not. If it is, we destroy the Actor (using the Kills [Self] block).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image35.png" style="width: 231px; height: 122px;"></p>
+<p>
+ When an enemy runs out of hitpoints, we want it to play an explosion sound, and disappear. We use Kills [Self] and a [Play] [Sound] block and select our Explosion sound effect from the dropdown menu (click the block and then select the Explosion sound we uploaded earlier). Note that you need to put the sound block above <strong>kill self</strong>, because once an actor is killed it stops following any instructions and won't play the sound!</p>
+<p>
+ <img alt="Remove enemy Event." src="./new/playexplosion_killself.png"></p>
+<p>
+ Step 83: Now we need to add an effect to our Enemy Ship Actor Type so the player can tell when it’s hit. We’re going to use blocks under Actor -&gt; Effects in the Palette along with a timer block.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image31.png"></p>
+<p>
+ Step 84: When our Enemy Ship is hit by a Bullet, the effect will be applied. The problem is it will stay that way. We can use the timer block to switch it back.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 12 on Stencylpedia_files/image51.png"></p>
+<p>
+ With all this in place, test the game. If everything is working, it’s time to create a way for our player to win the game.</p>
+ 			<p>Proceed to the <a href="page5.html">next page</a></p>
+		</div>
+	</div>
+
+	<div class="fullscreenbackground">
+	  <img class="fullscreenpic" src="/">
+	</div>
+ <script src="/js/arcade.js"/>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-707544-9', 'popuparcade.co.nz');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

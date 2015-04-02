@@ -1,0 +1,63 @@
+[ ] two laptops for staff
+
+[ ] 2x usb with
+	Stencyl (mac, win, linux)
+	the game assets
+
+
+The workshop will cover:
+* Installing Stencyl, a game making tool
+* Building a classic arcade game
+* Short break
+* Discuss game design and ways we could extend our games
+* Customise our games with our own ideas
+* Debrief and suggest ways to continue at home
+
+================
+
+Hi!
+
+Introductions
+
+Overview:
+	1. different kinds of games
+		Flappy Bird
+		Minecraft
+		GTA 5 took 5 years + $265 million
+	2. different game-making tools
+		Some easier to learn, but less flexible
+
+
+=== What's a videogame? ===
+
+- examples
+
+- The Sims
+- Minecraft
+- Grand Theft Auto 5
+- Flappy Bird
+- Angry Birds
+
+=== What are some game making tools? ===
+
+- Game Maker
+ Spelunky
+ Gunpoint
+ $13 Game
+
+- Twine
+	Be a blackbird
+
+- Stencyl
+	?
+
+- Unity
+	?
+
+- C++
+	Path of Exile
+	Grand Theft Auto 5
+
+- Kodu
+	?
+	?

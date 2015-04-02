@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/style/arcade.css" type="text/css" />
+<title>The Pop-Up Games Arcade</title>
+</head>
+<body>
+	<div class="back3">
+		<div class="container">
+		    <h2>Getting started with Stencyl</h2>
+		    <img src="stencyl_logo.png">
+
+<p>Let's use Stencyl to remake the classic game Space Invaders.</p>
+
+<p>The player controls a spaceship and shoots enemies that move down from the top of the screen.</p>
+
+		</div>
+	</div>
+
+
+	<div class="back4">
+		<div class="container">
+			<h2>Part 0 - set up our tools</h2>
+
+			<p>Download Stencyl from <a target="_blank" href="http://www.stencyl.com/download/">here</a>, and install it.</p>
+
+			<p>Download a .zip file with images and sounds for this guide by clicking <a href="assets.zip">here.</a></p>
+
+			<p>Extract the assets.zip to a location you will remember.</p>
+
+		</div>
+	</div>
+
+	<div class="back5">
+		<div class="container">
+			<h2>
+			 Part 1: Creating a New Game</h2>
+			 <p>Open Stencyl. Click "Remind me Later" if you don't have an account.</p>
+			<p>
+			 Step 1: Click on the box that says “Click here to create a new Game.”</p>
+			<p>
+			 <img alt="" src="./Crash Course 2  Invaders - Part 1 on Stencylpedia_files/image77.png"></p>
+			<p>
+			 Step 2: Select the Blank Game option from the list and click Next.</p>
+			<p>
+			 <img alt="" src="./Crash Course 2  Invaders - Part 1 on Stencylpedia_files/image01.png"></p>
+			<p>
+			Name your game Invaders. Leave the Width and Height the same.</p>
+			<p>
+			 <img alt="Game Setup window" src="./Crash Course 2  Invaders - Part 1 on Stencylpedia_files/CC2-Invaders-Setup-Screen.png" style="width: 640px; height: 476px;"></p>
+			<p>
+			 Click "Create" and Stencyl will build your blank game and open it.</p>
+			<p>
+			 Next, we’ll start importing assets.</p>
+		</div>
+	</div>
+
+	<div class="back1">
+		<div class="container">
+			<h2>Part 2: Creating Actor Types</h2>
+
+			<p>
+ Step 3: Now that we have a blank game, it’s time to create our Actor Types.</p>
+
+
+ <p>We’ll start with our spaceship, which the player will control.</p>
+
+ <p>Click the Actor Type button in the Dashboard menu on the left (under Resources, as shown).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image80.png" style="width: 210px; height: 64px;"></p>
+<p>
+ Step 4: Next, click the large box in the workspace on the right (shown below) to create our first Actor Type.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image108.png"></p>
+<p>
+ Step 5: We will see the "Create New..." dialog appear (shown below). Name your Actor Type "Ship" as shown. Click the <strong>Create</strong> button.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image07.png"></p>
+<p>
+ Stencyl will create our new Actor Type and then open it for us.</p>
+<p>
+ Step 6: Our Actor Type needs an image so we can see it. Images are gathered in Animations.</p>
+<p>
+ Click the large box with the dotted line to add an animation (shown below).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image110.png"></p>
+<p>
+ Stencyl will create a new Animation for us and open it in the workspace.</p>
+<p>
+ Step 7: We are now looking at the Animation Editor for a new Animation, which is named "Animation 0".</p>
+<p>
+ An Animation name should describe what it shows. We are adding a flying animation so we need to erase "Animation 0" from the <strong>Name</strong> field and type "Flying" into it.</p>
+<p>
+ Now that our new Animation has been named properly, let's give it some images. We will click on the "Click here to add a frame" box to open our image importer.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/CC2_image56.png"></p>
+<p>
+ Step 8: The image importer dialog below will pop up for us. First we have to select an image to import; click the <strong>Choose Image</strong> button.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/CC2_image19.png" style="height: 400px; width: 640px;"></p>
+<p>
+ We should have saved and extracted the example assets earlier somewhere on our computer, so we should navigate to that folder. We want to open the "Ship_flying.png" image for this Animation (if you still need to download the assets, <a href="assets.zip">click here to download them</a>).</p>
+<p>
+ <img alt="Ship_flying.png selected" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/ship_flying_selected.png" style="width: 571px; height: 424px;"></p>
+<p>
+ Step 9: This 1 image contains 4 frames of animation. We need to tell Stencyl how this works before we add the image.</p>
+
+ <p>Set the value in the “Columns” field to 4. This will split our image evenly into four frames goin across. Once ready, click <strong>Add</strong> to import the image as four frames of our Flying animation.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/CC2_image40.png" style="width: 640px; height: 400px;"></p>
+<p>
+ Now our Flying animation has 4 frames. You can see a preview of the animation looping on the left side of the screen.</p>
+<p>
+ <img alt="Flying animation completed" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/CC2_flying_animation_completed.png" style="width: 755px; height: 408px;"></p>
+<p>
+ Step 10: Now that we have our single Animation, we need to choose the correct Physics settings for our Ship Actor Type. Click the <strong>Physics </strong>tab, as shown below.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image14.png"></p>
+<p>
+ Step 11: The first page that will appear is the “General” page under Physics. Let's leave the "What kind of Actor Type?" option set to Normal, but set "Can Rotate? and "Affected by Gravity?" both to <strong>No</strong>.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image82.png"></p>
+<p>
+ Step 12: Now we need to set the Collision Group that our Actor Type is a member of. This will allow us to specify what our Ship can collide with and what it will pass through. Click the <strong>Properties</strong> tab (shown below).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image94.png" style="width: 476px; height: 26px;"></p>
+<p>
+ Step 13: Set the Group to "Players", as shown. <!--If we want to create more Groups, there is an Edit Groups button on the right. You can <a href="http://www.stencyl.com/help/view/collisions-and-groups/">read more about creating Groups here</a>. Note the Players Group is built into Stencyl and will appear by default on when we click the dropdown, so we don't need to Edit Groups at this point.--></p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image13.png"></p>
+<p>
+ Step 14: We want to save our Ship Actor Type (and the game) by clicking File and then Save Game. Note that there is a keyboard shortcut available for this, as well as the "Save Game" disk icon.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 2 on Stencylpedia_files/image81.png" style="width: 285px; height: 345px;"></p>
+<p>
+ We have our Ship Actor Type set up now, so it's time to move on to determining how our Ship, and the other Actor Types we'll create, can collide with one another.</p>
+<p>
+
+<p>Proceed to the <a href="page2.html">next page</a></p>
+
+		</div>
+	</div>
+
+	<div class="fullscreenbackground">
+	  <img class="fullscreenpic" src="/">
+	</div>
+ <script src="/js/arcade.js"/>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-707544-9', 'popuparcade.co.nz');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

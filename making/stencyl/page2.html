@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/style/arcade.css" type="text/css" />
+<title>The Pop-Up Games Arcade</title>
+</head>
+<body>
+	<div class="back3">
+		<div class="container">
+		    <h2>Getting started with Stencyl</h2>
+		    <img src="stencyl_logo.png">
+
+
+		    <h2>Part 3: Actor Collisions</h2>
+<p>
+ Step 15: The Collision Group an Actor belongs to determines what other Actors it can (and can’t) collide with. To start, we click the <strong>Settings</strong> button at the top of Stencyl's interface, in the upper left.</p>
+<p>
+ <img alt="Settings button" src="./Crash Course 2  Invaders - Part 3 on Stencylpedia_files/CC2-Settings-Button.png" style="width: 400px; height: 107px;"></p>
+<p>
+ Step 16: A new dialog will pop up that shows the settings in our game. Different options are down the left side, we want to go to the car icon with the label <strong>Groups</strong>. The center area of the Game Settings dialog will change to show us our Collision Group settings for this game.</p>
+<p>
+ <img alt="Collision groups settings." src="./Crash Course 2  Invaders - Part 3 on Stencylpedia_files/CC2-Collision-Groups-Settings.png" style="width: 640px; height: 488px;"></p>
+<p>
+ <em>(Note in the screenshot we already created Enemies and Bullets as Groups - we'll show you how to create a Group in the following steps).</em></p>
+<p>
+ Step 17: Click the green <strong>Create New</strong> button along the top of the window to create a new Collision Group.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 3 on Stencylpedia_files/image71.png"></p>
+<p>
+ Step 18: When the dialog box pops up, name it "Enemies", as shown, and hit the <strong>Create</strong> button. We can leave the Description field blank.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 3 on Stencylpedia_files/image57.png" style="width: 421px; height: 250px;"></p>
+<p>
+ Step 19: Next, let's click the green <strong>Create New</strong> button again and create another group. This time let's call it "Bullets".</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 3 on Stencylpedia_files/image109.png"></p>
+<p>
+ Step 20: By default, our new groups are not set to collide with anything else. Let's change their settings so they do.</p>
+<p>
+ Select the Bullets group in the list to the <strong>right</strong>. In the central settings area, we can see the "Bullets" name, the description, and a "Collides With" grid of buttons - one for every other group that we have in our game.</p>
+<p>
+ Within the "Bullets" group's settings, click the <strong>Enemies</strong> button once so it turns green, as shown below. Leave all the other buttons grey. This means any Actor Types that belong to the Bullets Group will only be able to collide with Actor Types in the Enemies Group.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 3 on Stencylpedia_files/image44.png"></p>
+<p>
+ Click the <strong>OK</strong> button in the bottom-right corner of the Game Settings dialog box to close the window.</p>
+
+		</div>
+	</div>
+
+
+	<div class="back4">
+		<div class="container">
+			<h2>Part 4: Creating More Actor Types and Importing a Background</h2>
+
+			<p>
+ Step 21: Now that we have our new Collision Groups, we need to create our Enemy Ship Actor Type. Use the same steps as you used to create the Ship Actor Type to create the Enemy Ship. Here’s a brief reminder of the steps:</p>
+<ol>
+ <li>
+  Click the <strong>Dashboard</strong> tab.</li>
+ <li>
+  Click on <strong>Actor Types</strong> (this may already be highlighted).</li>
+ <li>
+  Click the dotted line box to <strong>create a new Actor Type</strong>.</li>
+ <li>
+  Name the new Actor Type "Enemy Ship" and click 'Create'.</li>
+ <li>
+  Click on the Appearance tab, <strong>Add an animation</strong> and <strong>Add a frame</strong> to import the "Alien_grabber.png" image.</li>
+ <li>
+  Rename our first animation to "Normal".</li>
+</ol>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image08.png" style="width: 242px; height: 171px;"></p>
+<p>
+ Step 23: We’ve created our "Enemy Ship" Actor Type and added an animation. Like we did with the Ship in previous steps, we need to set its <strong>Physics</strong> settings. Let's change our Enemy Ship to the following settings:</p>
+<ul>
+ <li>
+  What kind of Actor Type? <strong>Cannot be pushed</strong></li>
+ <li>
+  Can Rotate? <strong>No </strong></li>
+ <li>
+  Affected by Gravity? This is disabled by Stencyl already, so you don't have to change it. (If an Actor Type cannot be pushed, then it automatically cannot be affected by gravity either.)</li>
+</ul>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image96.png" style="width: 363px; height: 487px;"></p>
+<p>
+ Step 24: Choose its Collision Group by clicking the <strong>Properties</strong> tab and setting its Group to <strong>Enemies</strong>, as shown.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image61.png"></p>
+<p>
+ <em>Are you missing the Enemies and Bullets groups? You need to go back to Part 3 and create them!</em></p>
+<p>
+ Step 25: Next, we need to <strong>create the "Bullet" Actor Type</strong>. Follow the same steps as you did to create the Ship and Enemy Ship but name the new Actor Type "Bullet". Note that when importing the graphic for the Animation, set the number of Columns to 3, as shown below.</p>
+<p>
+ <img alt="Bullet Actor Type" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image29.png" style="width: 600px; height: 376px;"></p>
+<p>
+ Step 26: We want to have slightly different <strong>Physics</strong> settings for the Bullets.</p>
+<ul>
+ <li>
+  What kind of Actor Type? <strong>Normal</strong></li>
+ <li>
+  Can Rotate? <strong>No</strong></li>
+ <li>
+  Affected by Gravity? <strong>No</strong></li>
+</ul>
+
+<p>These settings mean bullets can be pushed around by the physics engine! We'll use this later.</p>
+
+<p>
+ Lastly, we set our Bullet Actor Type’s <strong>Collision Group</strong> (in the<strong> Properties</strong> tab) to <strong>Bullets</strong>.</p>
+
+<p>(Remember that earlier, we set up the collision groups so that the bullet group can collide with enemy group?)</p>
+
+<p>
+ Step 27: With our Actor Types created, we need to import a Background image to use in the Scene we’ll create later. Click the <strong>Dashboard</strong> and then on <strong>Backgrounds</strong>.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image98.png" style="width: 209px; height: 105px;"></p>
+<p>
+ Step 28: In the dialog that pops up, name the Background image <strong>Stars</strong> and press the <strong>Create</strong> button.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image32.png" style="width: 523px; height: 252px;"></p>
+<p>
+ Step 29: Click on the "<strong>Click here to add a frame</strong>" on the left, then on <strong>Choose Image</strong>, and select the "Space Background.png" image from the assets.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 4 on Stencylpedia_files/image33.png" style="width: 600px; height: 311px;"></p>
+<p>
+ <em>Have you saved recently? Now would be a great time to do so if you haven't!</em></p>
+<p>
+ Now it's time to import our sound assets.</p>
+<p>
+
+		</div>
+	</div>
+
+	<div class="back5">
+		<div class="container">
+	
+	<h2>
+ Part 5: Importing Sounds</h2>
+<p>
+ Step 30: Now it’s time to import our music and sound files. This time we’re going to show you a different way to import assets, by dragging and dropping files. First, click on the Dashboard and then on Sounds.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 5 on Stencylpedia_files/image63.png" style="width: 211px; height: 246px;"></p>
+<p>
+ Step 31: With the sound files on your desktop (General Space Shooter Spacey Level.mp3 and Explosion.mp3), click on one and drag it over into the dotted line box (shown below).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 5 on Stencylpedia_files/image107.png"></p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 5 on Stencylpedia_files/CC2_image76.png" style="height: 377px; width: 640px;"></p>
+<p>
+ Remember, we need to go back to the <strong>Dashboard</strong> to drag the second file in also.</p>
+<p>
+ Step 32: Now you’ll have two sounds. Make sure each sound is set to the correct type, as shown (the music should be set to Music, the explosion sound effect set to Sound Effect).</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 5 on Stencylpedia_files/image36.png"></p>
+<p>
+ With all our assets in place, it’s time to set up the Scene that will function as our main level.</p>
+<p>
+
+		</div>
+	</div>
+
+	<div class="back1">
+		<div class="container">
+
+<h2>
+ Part 6: Creating a Scene</h2>
+<p>
+ Step 32: Click <strong>Scenes</strong> in the Dashboard, then we need to click the dotted line box to create a new Scene.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image85.png"></p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image39.png" style="width: 441px; height: 89px;"></p>
+<p>
+ Step 33: After we hit that button, a dialog (shown) will pop up that lets us set some basic parameters for your Scene. <!--Note you can choose the size of your Scene either using Tiles (which will use the Tile Width and Height, as shown) or in pixels. In this case we’re using Tiles and will use the default values, as shown. -->Let's give it a name of "Level One", leave the other values the same and click <strong>Create</strong>.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image21.png"></p>
+<p>
+ Once we do, Stencyl will open up our new scene in the Scene Designer.</p>
+<p>
+ <img alt="Scene Editor" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/CC2-Scene-Editor-V3.png" style="width: 600px; height: 353px;"></p>
+<p>
+ <br>
+ Step 34: To keep things simple, we’re only going to add the background image we imported earlier rather than add any Tiles. Backgrounds are one of the layer types we can have in our scene. To add one, we need to click the small <strong>+</strong> icon in the <strong>Layers</strong> list. In there we select <strong>New Background Layer.</strong></p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/CC2_add_background_layer.png" style="width: 303px; height: 189px;"></p>
+<p>
+ Step 35: The "Choose a Background" dialog box will appear for us, and we can click on our <strong>Stars</strong> background and then click <strong>OK</strong>.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image02.png"></p>
+<p>
+ Step 36: Notice that our new Stars background layer is higher in the list than the default "Layer 0"? This means that if we try to add anything to Layer 0 it will be <em>underneath our Stars background!</em> Clearly this is not ideal, so to prevent this from happening, let's move the Stars background to the bottom of the Layers list. We can do this by clicking the down arrow at the bottom of the Layers list while the Stars background is selected.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/CC2_send_layer_to_back.png" style="width: 298px; height: 213px;"></p>
+<p>
+ Now our intial setup of the scene is done, and the main window of the Scene Designer should look like the image below.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image72.png"></p>
+<p>
+ Step 37: We’ve got our Scene, so let’s test it. Press the green Test Scene button and after a few moments we should see our Scene appear in a window.</p>
+<p>We'll also see a 'log viewer' pop up, with a list of messages. You can ignore it for now.</p>
+
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image113.png"></p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image43.png"></p>
+<p>
+ If the Scene appears, everything is working, and we can move ahead.</p>
+<p>
+ Step 38: Click the <strong>Actors</strong> tab in the Scene Designer, in the Palette on the right. You should see the three Actor Types you created earlier.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image102.png"></p>
+<p>
+ Step 39: Now we want to place individual Actors in the Scene. When placing actors, they are put on the Layer that is currently selected. As a result, we need to remember to click on <strong>Layer 0</strong> to select it as the current layer.</p>
+<p>
+ To place actors, we use the <strong>Pencil tool</strong> as shown below; select it now if it is not already active.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image112.png"></p>
+<p>
+ With the <strong>Ship </strong>selected from the Actor Type list, <strong>Layer 0</strong> selected (and above the background layer!) and the <strong>Pencil tool</strong> active, move our cursor over to the bottom-center of the Scene and left-click once. The Ship will appear. We only want one Ship for the player to control.</p>
+<p>
+ Note that we want the Ship to be within the scene boundaries, so don't put him in the grey "out of bounds" area! Put him inside the scene like in the image below.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image90.png"></p>
+<div class="tableWrapper" style="padding:10px;">
+ <strong>Tip:</strong> To place Actors at even intervals, hold down the Shift key, which will align an Actor with the Tile grid. You can make the grid appear by pressing the Show Grid button.</div>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/CC2_grid_button.png" style="width: 239px; height: 45px;"></p>
+<p>
+ Step 40: Next, select the Enemy Ship so we can place a few in the Scene. We can use the Shift key to space them evenly as shown in the image below.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image55.png"></p>
+<div class="tableWrapper" style="padding:10px;">
+ <strong>Tip:</strong> If any of your Actors don't appear on screen even though you placed them in the Scene, make sure you check the game window's (the viewport's) settings. Its Width should be 640 and Height should be 480. Click <strong>Settings</strong> and then <strong>Display</strong> to change this. You can make larger scenes and use a camera to move the screen around, but we won't be doing that in this activity.</div>
+<p>
+ Step 41: Now we have a basic, complete Scene. Make sure it works via the <strong>Test Scene</strong> button again. We should see your Ship at the bottom of the Scene and the five Enemy Ships hanging out near the top.</p>
+<p>
+ <img alt="" src="./Crash Course 2  Invaders - Part 6 on Stencylpedia_files/image38.png" style="width: 640px; height: 480px;"></p>
+<p>
+ We've got our Actors and Scene set up, so now it's time to start learning how to use Stencyl's Design Mode.</p>
+<p>
+
+
+<p>Proceed to the <a href="page3.html">next page</a></p>
+
+		</div>
+	</div>
+
+	<div class="fullscreenbackground">
+	  <img class="fullscreenpic" src="/">
+	</div>
+ <script src="/js/arcade.js"/>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-707544-9', 'popuparcade.co.nz');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
