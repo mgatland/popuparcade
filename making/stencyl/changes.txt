@@ -1,0 +1,69 @@
+Original Stencyl Crash Course ordering:
+
+1. blank game
+2. create Ship actor type
+	import frames
+3. Actor Collisions
+	actor groups
+4. more actor types
+	+ background for some reason
+5. importing sounds
+6. Creating a Scene
+	set background
+	place actors
+7. Design mode scripting
+	- background music
+8. making the ship move
+	lots of blocks
+	attribute
+	default attribute value
+9. Keeping the ship on screen
+	so many blocks
+10. ship fires bullets
+11. destroying bullets when they go off screen
+12. Destroying Enemy Ships
+13. Create a font
+14. Win condition
+	victory counter
+15. publish + extra challenges
+
+New ordering:
+1. blank game
+2. create Ship actor type
+	import frames
+[6] create a scene
+	place ship
+[8]. Making the ship move
+	(without attributes)
+[3]. actor collision groups
+[4] more actor types
+[10]. ship fires bullets
+[12]. Destroying Enemy Ships (without hitpoints or attribute)
+[15]. publish + extra challenges
+
+These become optional extras:
+	5. sounds + 7 background music
+	6. background picture (import background in 4)
+	9. keeping the ship on screen
+	13 and 14, victory counter and win text
+	from 12, enemy hit points and flashing when hit
+	from 2, animations with multiple frames
+
+never:
+	11. destroy bullets when they go off screen
+	in 8, use a variable for ship speed
+
+Other thoughts:
+	biggest problem is not knowing where the thing you want to click is.
+	Maybe have full screen screenshots with a highlight on what to click.
+	(for every click in the whole workshop :/)
+
+Things in the original course that don't need to be there:
+	animations \ multiple frames
+	background (including scene layers)
+	importing sounds
+	using an attribute for ship speed (it's totes unneccessary)
+	Keeping the ship on screen - move to optional extra
+	11. destroying bullets when they go off screen (not important. Could be a one sentence tip)
+	in 12, enemy hit points (and enemy flashing when shot)
+
